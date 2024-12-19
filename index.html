@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bluetreehost</title>
+        <style>
+            @keyframes rainbow {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            @keyframes treeScroll {
+                0% {
+                    transform: translate(0, 0);
+                }
+                25% {
+                    transform: translate(100px, 100px);
+                }
+                50% {
+                    transform: translate(0, 200px);
+                }
+                75% {
+                    transform: translate(-100px, 100px);
+                }
+                100% {
+                    transform: translate(0, 0);
+                }
+            }
+
+            @keyframes skierSlalom {
+                0%,
+                100% {
+                    transform: translate(0, 0) rotate(0deg);
+                }
+                10% {
+                    transform: translate(80vw, 20vh) rotate(15deg);
+                }
+                20% {
+                    transform: translate(20vw, 80vh) rotate(-15deg);
+                }
+                30% {
+                    transform: translate(90vw, 70vh) rotate(30deg);
+                }
+                40% {
+                    transform: translate(10vw, 40vh) rotate(-30deg);
+                }
+                50% {
+                    transform: translate(50vw, 90vh) rotate(0deg);
+                }
+                60% {
+                    transform: translate(70vw, 30vh) rotate(-20deg);
+                }
+                70% {
+                    transform: translate(30vw, 60vh) rotate(20deg);
+                }
+                80% {
+                    transform: translate(80vw, 80vh) rotate(-10deg);
+                }
+                90% {
+                    transform: translate(40vw, 10vh) rotate(10deg);
+                }
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(
+                    124deg,
+                    #ff2400,
+                    #e81d1d,
+                    #e8b71d,
+                    #e3e81d,
+                    #1de840,
+                    #1ddde8,
+                    #2b1de8,
+                    #dd00f3,
+                    #dd00f3
+                );
+                background-size: 1800% 1800%;
+                animation: rainbow 18s ease infinite;
+                overflow: hidden;
+            }
+
+            .tree {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100' height='100'%3E%3Cpath d='M50 10 L30 50 L40 50 L25 90 L75 90 L60 50 L70 50 Z' fill='%230000FF' fill-opacity='0.2'/%3E%3C/svg%3E");
+                background-size: contain;
+                animation: treeScroll 20s ease-in-out infinite;
+            }
+
+            .tree:nth-child(2n) {
+                animation-duration: 25s;
+                animation-delay: -5s;
+            }
+
+            .tree:nth-child(3n) {
+                animation-duration: 35s;
+                animation-delay: -10s;
+            }
+
+            .skier {
+                position: absolute;
+                width: 40px;
+                height: 60px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 60'%3E%3C!-- Body --%3E%3Cline x1='20' y1='10' x2='20' y2='40' stroke='black' stroke-width='2'/%3E%3C!-- Head --%3E%3Ccircle cx='20' cy='5' r='5' fill='black'/%3E%3C!-- Arms --%3E%3Cline x1='10' y1='20' x2='30' y2='20' stroke='black' stroke-width='2'/%3E%3C!-- Legs --%3E%3Cline x1='20' y1='40' x2='15' y2='55' stroke='black' stroke-width='2'/%3E%3Cline x1='20' y1='40' x2='25' y2='55' stroke='black' stroke-width='2'/%3E%3C!-- Skis --%3E%3Cline x1='5' y1='58' x2='35' y2='58' stroke='black' stroke-width='2'/%3E%3Cline x1='5' y1='55' x2='35' y2='55' stroke='black' stroke-width='1'/%3E%3C!-- Ski poles --%3E%3Cline x1='10' y1='20' x2='5' y2='40' stroke='black' stroke-width='1'/%3E%3Cline x1='30' y1='20' x2='35' y2='40' stroke='black' stroke-width='1'/%3E%3C/svg%3E");
+                background-size: contain;
+                background-repeat: no-repeat;
+                animation: skierSlalom 30s ease-in-out infinite;
+            }
+
+            .container {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 20px;
+                padding: 40px;
+                max-width: 600px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                position: relative;
+                z-index: 1;
+            }
+
+            h1 {
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #666;
+                line-height: 1.6;
+            }
+
+            .personal-message {
+                font-style: italic;
+                margin-top: 30px;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bluetreehost Has Ceased Business Operations</h1>
+            <p>
+                Bluetreehost has closed its doors and is no longer providing
+                hosting services as of December 31st, 2023.
+            </p>
+            <div class="personal-message">
+                <p>
+                    We launched Bluetreehost in 2007 with the goal of providing
+                    affordable and reliable hosting services to our customers.
+                    We are grateful for the support we received from our
+                    customers over the years. Given the hosting landscape and
+                    shifts over the years, we decided to cease operations and
+                    focus on other ventures. We appreciate your understanding
+                    and support over the years! Onward and upward.
+                </p>
+            </div>
+        </div>
+        <div class="skier"></div>
+        <script>
+            function createTrees() {
+                const body = document.body;
+                for (let i = 0; i < 20; i++) {
+                    const tree = document.createElement("div");
+                    tree.className = "tree";
+                    tree.style.left = `${Math.random() * 100}vw`;
+                    tree.style.top = `${Math.random() * 100}vh`;
+                    body.appendChild(tree);
+                }
+            }
+            createTrees();
+        </script>
+    </body>
+</html>
